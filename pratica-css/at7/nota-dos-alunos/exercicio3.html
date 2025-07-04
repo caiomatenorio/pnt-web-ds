@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nota dos alunos</title>
+    <style>
+      table {
+        width: 50%;
+        border: 1px solid black;
+      }
+
+      tbody > :nth-child(odd) {
+        background-color: #c0c0c0;
+      }
+
+      tr > :not(:first-child) {
+        text-align: center;
+      }
+
+      th,
+      td {
+        margin: 1px;
+        border: 1px solid black;
+      }
+
+      thead > :not(:first-child) > :not(:first-child) {
+        font-style: italic;
+      }
+
+      .green {
+        color: green;
+      }
+
+      .red {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Nota dos alunos</h1>
+      <hr size="2" color="gray" />
+    </header>
+    <main>
+      <center>
+        <table>
+          <thead>
+            <tr>
+              <th>Alunos</th>
+              <th colspan="2">Notas</th>
+            </tr>
+            <tr>
+              <th align="start">-</th>
+              <th>Prova</th>
+              <th>Trabalho</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ana Paula</td>
+              <td class="green">10</td>
+              <td class="green">8</td>
+            </tr>
+            <tr>
+              <td>Beatriz</td>
+              <td class="green">7</td>
+              <td class="red">5</td>
+            </tr>
+            <tr>
+              <td>Joaquim</td>
+              <td class="green">9</td>
+              <td class="green">10</td>
+            </tr>
+            <tr>
+              <td>Paulo</td>
+              <td class="red">4,5</td>
+              <td class="green">6</td>
+            </tr>
+            <tr>
+              <td>Tadeu</td>
+              <td class="red">3</td>
+              <td class="red">2</td>
+            </tr>
+          </tbody>
+        </table>
+      </center>
+    </main>
+  </body>
+</html>
