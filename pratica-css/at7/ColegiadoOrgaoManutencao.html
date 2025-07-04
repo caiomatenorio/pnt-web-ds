@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Órgão Colegiado - Manutenção</title>
+    <style>
+      /* FIXME: style the rest of the site */
+      table {
+        border: 1px solid black;
+      }
+
+      td {
+        padding: 10px;
+        border: 1px solid black;
+      }
+
+      table {
+        margin-bottom: 20px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 70vw;
+        align-items: center;
+        justify-content: center;
+      }
+
+      fieldset {
+        border: none;
+        width: 100%;
+      }
+
+      fieldset div {
+        display: inline-flex;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <p>Colegiado UNESP</p>
+      <p>Manutenção do Órgão Colegiado</p>
+    </header>
+    <main>
+      <center>
+        <table>
+          <tr>
+            <td>Unidade</td>
+            <td>FACULDADE DE ENGENHARIA DE ILHA SOLTEIRA</td>
+          </tr>
+          <tr>
+            <td>Tipo Colegiado</td>
+            <td>CONGREGAÇÃO</td>
+          </tr>
+        </table>
+      </center>
+      <center>
+        <table>
+          <tr>
+            <td>Órgão Colegiado</td>
+          </tr>
+          <tr>
+            <td>
+              <form>
+                <fieldset>
+                  <label for="name">Nome</label>
+                  <input type="text" name="name" id="name" />
+                </fieldset>
+                <fieldset>
+                  <div>
+                    <label for="sigla">Sigla</label>
+                    <input type="text" name="sigla" id="sigla" />
+                  </div>
+                  <div>
+                    <label for="status">Status</label>
+                    <select name="status" id="status">
+                      <option value="true">Ativado</option>
+                      <option value="false">Desativado</option>
+                    </select>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <div>
+                    <label for="activation">Data de ativação</label>
+                    <input type="date" name="activation" id="activation" />
+                  </div>
+                  <div>
+                    <label for="deactivation">Data Desativação</label>
+                    <input type="date" name="deactivation" id="deactivation" />
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <label for="origin">Órgão de Origem</label>
+                  <input type="text" name="origin" id="origin" />
+                  <button>Buscar</button>
+                </fieldset>
+                <fieldset>
+                  <label for="superior">Órgão Superior</label>
+                  <input type="text" name="superior" id="superior" />
+                  <button>Buscar</button>
+                </fieldset>
+                <fieldset>
+                  <label for="docs">Documentação</label>
+                  <textarea name="docs" id="docs"></textarea>
+                </fieldset>
+                <div>
+                  <button type="submit">Salvar</button>
+                  <button type="reset">Excluir</button>
+                </div>
+              </form>
+            </td>
+          </tr>
+        </table>
+      </center>
+      <button>Retornar</button>
+    </main>
+  </body>
+</html>
